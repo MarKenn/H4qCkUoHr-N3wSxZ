@@ -13,6 +13,8 @@
 		177D0DF826BEF02800F94CD6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 177D0DF726BEF02800F94CD6 /* Preview Assets.xcassets */; };
 		177D0E0126BF76B700F94CD6 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177D0E0026BF76B700F94CD6 /* NetworkManager.swift */; };
 		177D0E0326BF7A1300F94CD6 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177D0E0226BF7A1300F94CD6 /* PostData.swift */; };
+		177D0E0626BF7F8F00F94CD6 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177D0E0526BF7F8F00F94CD6 /* DetailView.swift */; };
+		177D0E0826BF85B600F94CD6 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177D0E0726BF85B600F94CD6 /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,9 @@
 		177D0DF926BEF02800F94CD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		177D0E0026BF76B700F94CD6 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		177D0E0226BF7A1300F94CD6 /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		177D0E0526BF7F8F00F94CD6 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		177D0E0726BF85B600F94CD6 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		177D0E0926BF872200F94CD6 /* H4qCkUoHr N3wSxZ.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "H4qCkUoHr N3wSxZ.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +61,10 @@
 		177D0DEF26BEF02500F94CD6 /* H4qCkUoHr N3wSxZ */ = {
 			isa = PBXGroup;
 			children = (
+				177D0E0926BF872200F94CD6 /* H4qCkUoHr N3wSxZ.entitlements */,
 				177D0DFF26BF76A300F94CD6 /* Models */,
 				177D0DF026BEF02500F94CD6 /* H4qCkUoHr_N3wSxZApp.swift */,
-				177D0DF226BEF02500F94CD6 /* ContentView.swift */,
+				177D0E0426BF7F7E00F94CD6 /* Views */,
 				177D0DF426BEF02800F94CD6 /* Assets.xcassets */,
 				177D0DF926BEF02800F94CD6 /* Info.plist */,
 				177D0DF626BEF02800F94CD6 /* Preview Content */,
@@ -81,6 +87,16 @@
 				177D0E0226BF7A1300F94CD6 /* PostData.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		177D0E0426BF7F7E00F94CD6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				177D0DF226BEF02500F94CD6 /* ContentView.swift */,
+				177D0E0526BF7F8F00F94CD6 /* DetailView.swift */,
+				177D0E0726BF85B600F94CD6 /* WebView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +171,8 @@
 				177D0E0126BF76B700F94CD6 /* NetworkManager.swift in Sources */,
 				177D0E0326BF7A1300F94CD6 /* PostData.swift in Sources */,
 				177D0DF326BEF02500F94CD6 /* ContentView.swift in Sources */,
+				177D0E0826BF85B600F94CD6 /* WebView.swift in Sources */,
+				177D0E0626BF7F8F00F94CD6 /* DetailView.swift in Sources */,
 				177D0DF126BEF02500F94CD6 /* H4qCkUoHr_N3wSxZApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,8 +301,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "H4qCkUoHr N3wSxZ/H4qCkUoHr N3wSxZ.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"H4qCkUoHr N3wSxZ/Preview Content\"";
+				DEVELOPMENT_TEAM = 64WRQPRMA9;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "H4qCkUoHr N3wSxZ/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -294,6 +314,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mkmbayona.H4qCkUoHr-N3wSxZ";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -304,8 +325,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "H4qCkUoHr N3wSxZ/H4qCkUoHr N3wSxZ.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"H4qCkUoHr N3wSxZ/Preview Content\"";
+				DEVELOPMENT_TEAM = 64WRQPRMA9;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "H4qCkUoHr N3wSxZ/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -315,6 +338,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mkmbayona.H4qCkUoHr-N3wSxZ";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
